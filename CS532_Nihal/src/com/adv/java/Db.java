@@ -11,10 +11,10 @@ import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.Session;
 
 public class Db {
-	public static String jumpserverHost = "playground.bradley.edu";
-	public static String jumpserverUsername = "ngade";
-	public static String databaseUsername = "s_ngade";
-	public static String databasePassword = "Dhaya@2229";
+	public static String jumpserverHost = "www.hello.edu";
+	public static String jumpserverUsername = "*********";
+	public static String databaseUsername = "********";
+	public static String databasePassword = "**********";
 	public static Connection con = null;
 	public static Session session = null;
 	
@@ -26,7 +26,7 @@ public class Db {
 			java.util.Properties config = new java.util.Properties() ;
 			config.put("StrictHostKeyChecking", "no") ;
 			session.setConfig(config);
-			session.setPassword("Akhil@2229");
+			session.setPassword("*********");
 			session.connect();
 			System.out.println("connected");
 			System.out.println(session.getHost());
