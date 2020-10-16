@@ -33,7 +33,7 @@ public class Db {
 			int forwardedPort = session.setPortForwardingL(0,"127.0.0.1", 3306);
 			System.out.println(forwardedPort);
 			System.out.println(session.getUserName());
-			String url = "jdbc:mysql://localhost:"+ forwardedPort+"/s_ngade?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false";
+			String url = "jdbc:mysql://localhost:"+ forwardedPort+"/******?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false";
 			try {
 				con = DriverManager.getConnection(url, databaseUsername, databasePassword);
 				System.out.println(con);
